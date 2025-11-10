@@ -1,3 +1,6 @@
+# v1.1.1
+- Added back support for MacOS
+
 # v1.1.0
 - Added geode version number to the version display
 

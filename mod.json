@@ -2,11 +2,12 @@
   "geode": "4.9.0",
   "gd": {
     "win": "2.2074",
-    "android": "2.2074"
+    "android": "2.2074",
+    "mac": "2.2074"
   },
   "id": "neonyaa.showgameversion",
   "name": "Show Game Version",
-  "version": "v1.1.0",
+  "version": "v1.1.1",
   "developer": "NeoNyaa",
   "description": "Shows the GD version number on the main menu",
   "tags": ["universal", "enhancement", "interface", "utility"],
