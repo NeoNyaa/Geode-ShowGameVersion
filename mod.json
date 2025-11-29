@@ -1,32 +1,53 @@
 {
-  "geode": "4.9.0",
+  "geode": "4.10.0",
   "gd": {
     "win": "2.2074",
     "android": "2.2074",
     "mac": "2.2074"
   },
   "id": "neonyaa.showgameversion",
-  "name": "Show Game Version",
-  "version": "v1.1.1",
-  "developer": "NeoNyaa",
-  "description": "Shows the GD version number on the main menu",
-  "tags": ["universal", "enhancement", "interface", "utility"],
+  "name": "Show Client Versions",
+  "version": "v1.3.0",
+  "description": "Display GD & Geode versions on the main menu",
+	"developers": ["NeoNyaa", "NeoFur"],
   "links": {
-    "source": "https://github.com/NeoNyaa/Geode-ShowGameVersion",
-    "homepage": "https://github.com/NeoNyaa/Geode-ShowGameVersion"
+		"source": "https://github.com/NeoNyaa/Geode-ShowClientVersions",
+    "homepage": "https://github.com/NeoNyaa/Geode-ShowClientVersions"
   },
+	"tags": ["universal", "enhancement", "interface", "utility"],
   "settings": {
-    "version-position": {
+    "conf-showGDVersion": {
+      "type": "bool",
+      "name": "Show GD Version",
+      "default": true
+    },
+    "conf-showGeodeVersion": {
+      "type": "bool",
+      "name": "Show Geode Version",
+      "default": true
+    },
+    "conf-showCocos2dVersion": {
+      "type": "bool",
+      "name": "Show Cocos2d Version",
+      "default": true
+    },
+    "conf-versionsOnNewLines": {
+      "type": "bool",
+      "name": "One Line Per Version",
+			"description": "Show each version on its own line rather than on one single line",
+      "default": true
+    },
+    "conf-versionsPosition": {
       "type": "string",
-      "name": "Version Number Position",
-      "description": "Set the position of the GD version number on the main menu",
+      "name": "Versions position",
+      "description": "Set the position of the versions on the main menu",
       "default": "Bottom Left",
       "one-of": ["Top Left", "Top Right", "Bottom Left", "Bottom Right"]
     },
-    "version-opacity": {
+    "conf-versionsOpacity": {
       "type": "float",
-      "name": "Version Number Opacity",
-      "description": "Set the opacity of the GD version number on the main menu",
+      "name": "Versions Opacity",
+      "description": "Set the opacity of the versions on the main menu",
       "default": 127.5,
       "min": 0,
       "max": 255,
@@ -40,9 +61,9 @@
         "input": true
       }
     },
-    "debug-enabled": {
+    "conf-debugLoggingEnabled": {
       "type": "bool",
-      "name": "Enable Debug Logging",
+      "name": "Debug Logging",
       "description": "Logging must be set to info in geode settings.",
       "default": false
     }
