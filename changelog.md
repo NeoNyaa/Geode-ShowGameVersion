@@ -1,3 +1,6 @@
+# v1.3.2
+- Changed the default location for the version strings to top right
+
 # v1.3.1
 - Updated the name of the mod
 - Added my alias to the developers

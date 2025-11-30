@@ -7,7 +7,7 @@
   },
   "id": "neonyaa.showgameversion",
   "name": "Show Client Versions",
-  "version": "v1.3.1",
+  "version": "v1.3.2",
   "description": "Display GD & Geode versions on the main menu",
 	"developers": ["NeoNyaa", "NeoFur"],
   "links": {
@@ -41,7 +41,7 @@
       "type": "string",
       "name": "Versions position",
       "description": "Set the position of the versions on the main menu",
-      "default": "Bottom Left",
+      "default": "Top Right",
       "one-of": ["Top Left", "Top Right", "Bottom Left", "Bottom Right"]
     },
     "conf-versionsOpacity": {
